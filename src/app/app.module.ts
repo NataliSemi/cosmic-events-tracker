@@ -8,14 +8,17 @@ import { AppComponent } from './app.component';
 import { EventListComponent } from './components/event-list/event-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EventDetailsComponent } from './components/event-details/event-details.component';
+import { ContactComponent } from './components/contacts/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventListComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    ContactComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,

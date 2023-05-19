@@ -1,21 +1,9 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+<div>
+  <input type="text" [(ngModel)]="searchQuery" placeholder="Enter search query">
+  <button (click)="searchImages()">Search</button>
+</div>
 
-import { ImageSearchFormComponent } from './image-search-form.component';
-
-describe('ImageSearchFormComponent', () => {
-  let component: ImageSearchFormComponent;
-  let fixture: ComponentFixture<ImageSearchFormComponent>;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [ImageSearchFormComponent]
-    });
-    fixture = TestBed.createComponent(ImageSearchFormComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+<div *ngFor="let image of images" class="image-container">
+  <img [src]="image.links[0].href" alt="{{ image.data[0].title }}">
+  <p>{{ image.data[0].description }}</p>
+</div>

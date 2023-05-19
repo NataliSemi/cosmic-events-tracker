@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { NasaImagesService } from '../../services/nasa-images.service';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-image-search-form',
@@ -7,23 +6,9 @@ import { NasaImagesService } from '../../services/nasa-images.service';
   styleUrls: ['./image-search-form.component.css']
 })
 export class ImageSearchFormComponent {
-  keyword: string = '';
+  @Output() searchQuery = new EventEmitter<string>();
 
-  constructor(private nasaImagesService: NasaImagesService) {}
-
-  searchImages() {
-    if (this.keyword.trim() !== '') {
-      this.nasaImagesService.searchImages(this.keyword).subscribe(
-        (response) => {
-          // Handle the API response here
-          console.log(response);
-        },
-        (error) => {
-          // Handle any errors
-          console.error(error);
-        }
-      );
-    }
+  onSubmit(query: string): void {
+    this.searchQuery.emit(query);
   }
 }
-
