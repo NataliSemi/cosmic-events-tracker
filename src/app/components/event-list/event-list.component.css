@@ -5,13 +5,22 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-image: url('../../../assets/6502013.jpg');
+    /* background-image: url('../../../assets/6502013.jpg'); */
+    background-image: url("../../../assets/galaxy1.jpg");
     background-size: cover;
     background-position: center;
     color: #ffffff;
   }
   
   /* Title styles */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+
   h2 {
     font-size: 24px;
     font-weight: bold;
@@ -147,3 +156,79 @@
     }
   }
 
+  .cosmic-container {
+    position: relative;
+  }
+  
+  .cosmic-title {
+    text-align: center;
+  }
+  
+  .planet-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .planet {
+    position: absolute;
+    animation: planetMovement linear infinite;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .planet.planet1 {
+    top: 20%;
+    right: 10%;
+    animation-duration: 8s;
+  }
+  
+  .planet.planet2 {
+    top: 30%;
+    right: 20%;
+    animation-duration: 12s;
+  }
+  
+  .planet.planet3 {
+    top: 40%;
+    right: 30%;
+    animation-duration: 10s;
+  }
+  
+  .planet.planet4 {
+    top: 50%;
+    right: 40%;
+    animation-duration: 15s;
+  }
+  
+  .planet.planet5 {
+    top: 60%;
+    right: 50%;
+    animation-duration: 14s;
+  }
+  
+  .planet.planet6 {
+    top: 70%;
+    right: 60%;
+    animation-duration: 11s;
+  }
+  
+  .planet.planet7 {
+    top: 80%;
+    right: 70%;
+    animation-duration: 13s;
+  }
+  
+  @keyframes planetMovement {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
