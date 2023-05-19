@@ -1,10 +1,10 @@
-<div *ngIf="events">
-  <h2>NASA Events</h2>
-  <ul>
-    <li *ngFor="let event of events">
-      <h3>{{ event.title }}</h3>
-      <p>{{ event.description }}</p>
-      <button (click)="goToEventDetails(event.id)">View Details</button>
+<div *ngIf="events" class="cosmic-container">
+  <h2 class="cosmic-title">NASA Events</h2>
+  <ul class="cosmic-list">
+    <li *ngFor="let event of events" class="cosmic-item">
+      <h3 class="cosmic-item-title">{{ event.title }}</h3>
+      <p class="cosmic-item-description">{{ event.description }}</p>
+      <button class="cosmic-item-button" (click)="goToEventDetails(event.id)">View Details</button>
     </li>
   </ul>
 </div>
