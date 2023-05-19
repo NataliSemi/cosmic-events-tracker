@@ -1,0 +1,45 @@
+<div>
+<div class="details flex" *ngIf="event">
+    <div class="title-description">
+      <h2>{{ event.title }}</h2>
+      <p>{{ event.description }}</p>
+    </div>
+    <div class="categories-sources">
+      <div class="categories">
+        <h3>Categories:</h3>
+        <ul>
+          <li *ngFor="let category of event.categories">{{ category.title }}</li>
+        </ul>
+      </div>
+      <div class="sources">
+        <h3>Sources:</h3>
+        <ul>
+          <li *ngFor="let source of event.sources">
+            <a [href]="source.url" target="_blank">{{ source.id }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="geometrics">
+      <h3>Geometries:</h3>
+      <div class="table-container">
+        <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Coordinates</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let geometry of event.geometries">
+                <td>{{ geometry.date }}</td>
+                <td>{{ geometry.type }}</td>
+                <td>{{ geometry.coordinates }}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+/* event-list.component.css */
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('../../../assets/6502013.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+  }
+  
+  /* Title styles */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Event styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    color: #cccccc;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hover effect for event items */
+  li:hover {
+    background-color: rgba(51, 51, 51, 0.8);
+  }
+  
