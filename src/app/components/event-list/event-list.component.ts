@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NasaService } from '../../services/nasa.service';
 import { Router } from '@angular/router';
 
@@ -16,6 +16,15 @@ export class EventListComponent implements OnInit {
     this.getNasaEvents();
   }
 
+  @HostListener('window:wheel', ['$event'])
+  onWindowScroll(event: Event): void {
+    // Handle the scroll event here
+    // You can access the scroll position using `window.scrollY`
+    // Example:
+    if (window.scrollY > 500) {
+      // Perform some action when the user scrolls beyond a certain point
+    }
+  }
   getNasaEvents(): void {
     this.nasaService.getNasaEvents().subscribe(
       (response) => {

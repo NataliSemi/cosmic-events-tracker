@@ -1,0 +1,63 @@
+.image-search-container {
+    background-image: url('../../../assets/galaxy2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  .image-search-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .image-search-input {
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  .image-search-button {
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .image-results {
+    margin-top: 20px;
+  }
+  
+  .image-card {
+    display: inline-block;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+  }
+  
+  .image-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .image-card-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .image-card-link {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  

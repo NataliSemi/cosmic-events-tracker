@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Image Search</h2>
+  
+    <form (ngSubmit)="searchImages()">
+      <input type="text" [(ngModel)]="query" name="query">
+      <button type="submit">Search</button>
+    </form>
+  
+    <div *ngIf="images && images.length > 0">
+      <h3>Search Results:</h3>
+      <ul>
+        <li *ngFor="let item of images">
+          <img [src]="item.links[0].href" alt="{{ item.data[0].title }}" />
+          <h4>{{ item.data[0].title }}</h4>
+          <p>{{ item.data[0].description }}</p>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="images && images.length === 0">
+      <p>No images found.</p>
+    </div>
+  </div>
+  
+  
+  
