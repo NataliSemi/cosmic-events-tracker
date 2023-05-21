@@ -1,14 +1,18 @@
 <div class="container">
-    <h2>Image Search</h2>
-  
-    <form (ngSubmit)="searchImages()">
-      <input type="text" [(ngModel)]="query" name="query">
-      <button type="submit">Search</button>
-    </form>
-  
-    <div *ngIf="images && images.length > 0">
-      <h3>Search Results:</h3>
-      <ul>
+  <h2>Image Search</h2>
+
+  <form (ngSubmit)="searchImages()" class="text-center compact-form">
+    <mat-form-field class="image-search-input-container">
+      <mat-label>Search for News</mat-label>
+      <input matInput type="text" [(ngModel)]="query" name="query">
+      <button mat-button class="items-center" type="submit">Search</button>
+    </mat-form-field>
+  </form>
+
+  <div class="images-result-container">
+    <h3>Search Results:</h3>
+    <div class="images-result-wrapper">
+      <ul class="images-result-list">
         <li *ngFor="let item of images">
           <img [src]="item.links[0].href" alt="{{ item.data[0].title }}" />
           <h4>{{ item.data[0].title }}</h4>
@@ -16,10 +20,16 @@
         </li>
       </ul>
     </div>
-    <div *ngIf="images && images.length === 0">
-      <p>No images found.</p>
-    </div>
   </div>
-  
-  
-  
+
+  <div *ngIf="images && images.length === 0">
+    <p>No images found.</p>
+  </div>
+  <img class="planet planet1" src="../../../assets/planets/planet.png" alt="">
+  <img class="planet planet2" src="../../../assets/planets/planet2.png" alt="">
+  <img class="planet planet3" src="../../../assets/planets/planet3.png" alt="">
+  <img class="planet planet4" src="../../../assets/planets/planet5.png" alt="">
+  <img class="planet planet5" src="../../../assets/planets/planet4.png" alt="">
+  <img class="planet planet6" src="../../../assets/planets/planet6.png" alt="">
+  <img class="planet planet7" src="../../../assets/planets/planet7.png" alt="">
+</div>

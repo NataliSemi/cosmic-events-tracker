@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 20px;
   /* background-image: url('../../../assets/6502013.jpg'); */
-  /* background-image: url("../../../assets/galaxy1.jpg"); */
+  background-image: url("../../../assets/galaxy2.jpg");
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -61,10 +61,9 @@ li:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Change 'hidden' to 'auto' */
+  overflow: hidden;
   animation: fadeIn 1s ease-in-out;
 }
-
 
 .cosmic-title {
   animation: slideInLeft 1s ease-in-out;
@@ -72,6 +71,27 @@ li:hover {
 
 .cosmic-list {
   animation: slideInRight 1s ease-in-out;
+  width: 30%; /* Set desired width */
+  height: 100%; /* Ensure full height */
+  overflow: auto; /* Add scrollable behavior */
+  background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay color */
+  padding: 10px; /* Add padding for the overlay */
+}
+
+.cosmic-list::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.cosmic-list::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the scrollbar track */
+}
+
+.cosmic-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Set the color of the scrollbar thumb */
+}
+
+.cosmic-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Set the color of the scrollbar thumb on hover */
 }
 
 .cosmic-item {

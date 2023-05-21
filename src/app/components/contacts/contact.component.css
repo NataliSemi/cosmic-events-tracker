@@ -2,16 +2,20 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0;
     overflow: auto; /* Change 'hidden' to 'auto' */
+  }
+
+  img{
+    width: 50%;
+    height: 50%;
   }
   
   h2 {
-    color: #333;
+    color: #ffffff;
   }
   
   p {
-    color: #666;
+    color: #ffffff;
   }
   
   ul {
