@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #f0f0f0;
+    overflow: auto; /* Change 'hidden' to 'auto' */
   }
   
   h2 {

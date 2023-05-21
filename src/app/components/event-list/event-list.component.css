@@ -61,9 +61,10 @@ li:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto; /* Change 'hidden' to 'auto' */
   animation: fadeIn 1s ease-in-out;
 }
+
 
 .cosmic-title {
   animation: slideInLeft 1s ease-in-out;
