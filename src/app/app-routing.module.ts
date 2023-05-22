@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'events/:id', component: EventDetailsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'image-search', component: ImageSearchComponent },
-  { path: '', redirectTo: '/events', pathMatch: 'full' },
+  { path: '', component: EventListComponent },
   { path: '**', redirectTo: '/events' }
 ];
 
