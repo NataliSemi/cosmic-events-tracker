@@ -1,6 +1,6 @@
 /* Container styles */
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   /* background-image: url('../../../assets/6502013.jpg'); */
@@ -63,7 +63,7 @@ li:hover {
 .cosmic-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
   overflow: hidden;
   animation: fadeIn 1s ease-in-out;
 }
@@ -246,28 +246,98 @@ li:hover {
   }
 }
 
-.satelite {
+/* Rest of the CSS code... */
+
+/* Rest of the CSS code... */
+.satellite {
   position: absolute;
+  animation: satelliteMovement linear infinite;
+  height: 60px;
+  width: 60px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: chaoticMovement 5s infinite;
+  animation-duration: 18s;
 }
 
-@keyframes chaoticMovement {
+@keyframes satelliteMovement {
   0% {
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
   }
   25% {
-    transform: translate(-40%, -60%) rotate(15deg);
+    top: calc(10% + (80% * random()));
+    left: calc(10% + (80% * random()));
+    transform: translate(-50%, -50%) rotate(-90deg + (180deg * random()));
   }
   50% {
-    transform: translate(-60%, -40%) rotate(-15deg);
+    top: calc(10% + (80% * random()));
+    left: calc(10% + (80% * random()));
+    transform: translate(-50%, -50%) rotate(90deg + (180deg * random()));
   }
   75% {
-    transform: translate(-40%, -60%) rotate(15deg);
+    top: calc(10% + (80% * random()));
+    left: calc(10% + (80% * random()));
+    transform: translate(-50%, -50%) rotate(180deg + (180deg * random()));
   }
   100% {
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+.spaceship {
+  position: absolute;
+  animation: spaceshipMovement linear infinite;
+  height: 60px;
+  width: 60px;
+  top: 20%;
+  left: 80%;
+  /* transform: translate(-50%, -50%); */
+  animation-duration: 8s;
+}
+
+.spaceship {
+  position: absolute;
+  animation: spaceshipMovement linear infinite;
+  height: 60px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  animation-duration: 18s;
+  top: calc(5% + (90% * random()));
+  left: calc(5% + (90% * random()));
+  animation-fill-mode: both;
+}
+
+
+@keyframes spaceshipMovement {
+  0% {
+    top: calc(5% + (90% * random()));
+    left: calc(5% + (90% * random()));
+    transform: translate(-50%, -50%) rotate(-90deg + (180deg * random()));
+  }
+  25% {
+    top: calc(5% + (90% * random()));
+    left: calc(5% + (90% * random()));
+    transform: translate(-50%, -50%) rotate(-90deg + (180deg * random()));
+  }
+  50% {
+    top: calc(5% + (90% * random()));
+    left: calc(5% + (90% * random()));
+    transform: translate(-50%, -50%) rotate(90deg + (180deg * random()));
+  }
+  75% {
+    top: calc(5% + (90% * random()));
+    left: calc(5% + (90% * random()));
+    transform: translate(-50%, -50%) rotate(180deg + (180deg * random()));
+  }
+  100% {
+    top: calc(5% + (90% * random()));
+    left: calc(5% + (90% * random()));
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
