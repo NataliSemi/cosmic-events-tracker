@@ -27,6 +27,7 @@
     margin-bottom: 10px;
   }
   
+  
   .image-container {
     text-align: center;
   }
@@ -45,5 +46,75 @@
   
   .image-explanation {
     font-size: 16px;
+  }
+
+  .centered-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  li{
+    color: #ffffff;
+  }
+  .contact-form{
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay color */
+    overflow: auto; /* Add scrollable behavior */
+  }
+
+  .contact-form::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+  
+  .contact-form::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the scrollbar track */
+  }
+  
+  .contact-form::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Set the color of the scrollbar thumb */
+  }
+  
+  .contact-form::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Set the color of the scrollbar thumb on hover */
+  }
+  
+
+  .spaceship {
+    position: absolute;
+    animation: spaceshipMovement linear infinite;
+    height: 60px;
+    width: 60px;
+    transform: translate(-50%, -50%);
+    animation-duration: 18s;
+    top: calc(5% + (90% * random()));
+    left: calc(5% + (90% * random()));
+    animation-fill-mode: both;
+  }
+  
+  @keyframes spaceshipMovement {
+    0% {
+      top: calc(5% + (90% * random()));
+      left: calc(5% + (90% * random()));
+      transform: translate(-50%, -50%) rotate(-90deg + (180deg * random()));
+    }
+    25% {
+      top: calc(5% + (90% * random()));
+      left: calc(5% + (90% * random()));
+      transform: translate(-50%, -50%) rotate(-90deg + (180deg * random()));
+    }
+    50% {
+      top: calc(5% + (90% * random()));
+      left: calc(5% + (90% * random()));
+      transform: translate(-50%, -50%) rotate(90deg + (180deg * random()));
+    }
+    75% {
+      top: calc(5% + (90% * random()));
+      left: calc(5% + (90% * random()));
+      transform: translate(-50%, -50%) rotate(180deg + (180deg * random()));
+    }
+    100% {
+      top: calc(5% + (90% * random()));
+      left: calc(5% + (90% * random()));
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
   

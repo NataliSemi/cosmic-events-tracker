@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container contact-form">
   <div *ngIf="imageOfDay" class="image-container">
-    <h2 class="image-title">{{ imageOfDay.title }}</h2>
+    <h2 class="image-title">Image of a day: {{ imageOfDay.title }}</h2>
     <img class="image" [src]="imageOfDay.url" alt="{{ imageOfDay.title }}">
     <p class="image-explanation">{{ imageOfDay.explanation }}</p>
-    <p>{{ imageOfDay.copyright }}</p>
+    <p>Copyright: {{ imageOfDay.copyright }}</p>
   </div>
   
   <h2>Contact Us</h2>
@@ -13,4 +13,5 @@
     <li>Phone: 123-456-7890</li>
     <li>Address: 123 Street, City, Country</li>
   </ul>
+  <img #spaceship class="spaceship" src="../../../assets/spaceships/pngwing.com(3).png" alt="">
 </div>
