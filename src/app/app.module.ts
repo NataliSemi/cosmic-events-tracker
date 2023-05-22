@@ -25,6 +25,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatListModule } from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {MatInputModule} from '@angular/material/input';
     EventDetailsComponent,
     ContactComponent,
     ImageSearchComponent,
-    EventListComponent
+    EventListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

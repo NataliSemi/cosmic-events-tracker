@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="navbar-menu">
+    <a routerLink="/events" class="navbar-link">
+      <img src="../assets/spaceships/pngwing.com.png" alt="" class="nav-icon">
+      Events
+    </a>
+    <a routerLink="/contact" class="navbar-link">
+      <img src="../assets/spaceships/mandolorian.png" alt="" class="nav-icon">
+      Contact
+    </a>
+    <a routerLink="/image-search" class="navbar-link">
+      <img src="../assets/spaceships/pngwing.com(2).png" alt="" class="nav-icon">
+      Image Search
+    </a>
+  </div>
+  <button class="navbar-toggle" onclick="toggleMobileNavbar()">
+    <span class="navbar-toggle-icon"></span>
+  </button>
+</nav>
+<script>
+  function toggleMobileNavbar() {
+  const navbarMenu = document.querySelector('.navbar-menu');
+  navbarMenu.classList.toggle('navbar-mobile-show');
+}
+
+</script>
