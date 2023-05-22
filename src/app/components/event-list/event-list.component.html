@@ -1,4 +1,4 @@
-<video autoplay class='hero' src="../../../assets/video/galaxygo.mp4"></video>
+<video autoplay class='hero' src="../../../assets/video/smaller.mp4"></video>
 <div *ngIf="events" class="cosmic-container">
 
   <h1>NASA events</h1>
@@ -6,7 +6,7 @@
     <li *ngFor="let event of events" class="cosmic-item">
       <h3 class="cosmic-item-title">{{ event.title }}</h3>
       <p class="cosmic-item-description">{{ event.description }}</p>
-      <button mat-raised-button class="cosmic-item-button" (click)="goToEventDetails(event.id)">View Details</button>
+      <button  class="cosmic-item-button" (click)="goToEventDetails(event.id)">View Details</button>
     </li>
   </ul>
   <img class="planet planet1" src="../../../assets/planets/planet.png" alt="">
