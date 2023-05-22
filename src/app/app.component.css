@@ -9,16 +9,16 @@
   background-repeat: no-repeat;
 }
 
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: center;
   background-color: #000000;
-  padding: 25px; 
+  padding: 25px; /* Increase the padding to make the navbar taller */
   color: #cccccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   opacity: 5;
-  position: relative; 
-  z-index: 1; 
+  position: relative; /* Add position relative */
+  z-index: 1; /* Add a higher z-index value */
 }
 
 
@@ -26,30 +26,13 @@
   margin: 0 10px;
   color: #ffffff;
   text-decoration: none;
-  font-size: 23px; 
+  font-size: 23px; /* Increase the font size for better visibility */
   transition: color 0.3s ease;
 }
 
 .navbar-link:hover {
   color: #6f00ff;
 }
-
-.nav-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-icon {
-  margin-right:10px;
-  width: 21px;
-  height: 32px;
-}
-
-.nav-link:hover {
-  color: #555;
-} */
 
 /* Title styles */
 h2 {
@@ -88,8 +71,8 @@ p {
 
 a {
   color: #6f00ff;
-  text-decoration: none !important;
   transition: color 0.3s ease;
+  text-shadow: rgb(0, 0, 0), rgb(0, 0, 0);
 }
 
 
@@ -98,6 +81,22 @@ li:hover {
   background-color: rgba(155, 215, 255, 0.8);
 }
 
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-icon {
+  margin-right:10px;
+  width: 21px;
+  height: 32px;
+}
+
+.nav-link:hover {
+  color: #555;
+}
 
 .hero{
   /* transform: rotate(-100deg); */

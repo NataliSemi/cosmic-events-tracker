@@ -23,6 +23,7 @@
 
 
 .navbar-link {
+  cursor: pointer;
   margin: 0 10px;
   color: #ffffff;
   text-decoration: none;
@@ -71,8 +72,8 @@ p {
 
 a {
   color: #6f00ff;
-  text-decoration: none !important;
   transition: color 0.3s ease;
+  text-shadow: rgb(0, 0, 0), rgb(0, 0, 0) !important; 
 }
 
 

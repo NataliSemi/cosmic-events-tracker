@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
 .container {
   /* background-image: url('../../../assets/6502013.jpg'); */
   color: #ffffff;
@@ -89,6 +91,7 @@ label.image-search-input{
   cursor: pointer;
   opacity: 5;
   z-index: 1; /* Add a higher z-index value */
+  margin: 5px;
 }
 
 .dark-button:hover {
@@ -99,6 +102,13 @@ label.image-search-input{
 
 .image-results {
   margin-top: 20px;
+}
+
+h3{
+  background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
+  font-family: 'Candal', sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .image-card {
@@ -153,7 +163,7 @@ li {
 .images-result-container {
   width: 50%; /* Adjust the width as desired */
   background-color: rgba(0, 0, 0, 0.6);
-  overflow-y: auto;
+  overflow: auto;
   padding: 10px;
   color: #ffffff;
 }

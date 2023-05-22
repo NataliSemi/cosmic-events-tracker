@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 /* event-list.component.css
 
 /* Container styles */
@@ -51,6 +52,9 @@ h3 {
   width: 40%;
   max-height: 90vh; /* Adjust the maximum height as desired */
   padding: 20px;
+  opacity: 5;
+  z-index: 1; /* Add a higher z-index value */
+  position: relative;
 }
 
 .event-details::-webkit-scrollbar {
@@ -85,7 +89,12 @@ h3 {
 }
 
 a{
-  text-decoration: none !important;
+  color:#ca1aff;
+  text-decoration: none;
+  background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
+  font-family: 'Candal', sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a:hover{

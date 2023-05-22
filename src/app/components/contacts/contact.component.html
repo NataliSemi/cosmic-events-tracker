@@ -1,11 +1,13 @@
 <video autoplay class='hero' src="../../../assets/video/galaxygo.mp4"></video>
+<img #spaceship class="spaceship" src="../../../assets/spaceships/pngwing.com(3).png" alt="">
 <div class="container contact-form">
 
   <div *ngIf="imageOfDay" class="image-container">
-    <h2 class="image-title">Image of a day: {{ imageOfDay.title }}</h2>
+    <h2>Image of A Day:</h2>
+    <h2 class="image-title">{{ imageOfDay.title }}</h2>
     <img class="image" [src]="imageOfDay.url" alt="{{ imageOfDay.title }}">
     <p class="image-explanation">{{ imageOfDay.explanation }}</p>
-    <p>Copyright: {{ imageOfDay.copyright }}</p>
+    <p>Copyright: <span class="copyrght">{{ imageOfDay.copyright }}</span></p>
   </div>
   
   <h2>Contact Us</h2>
@@ -15,5 +17,4 @@
     <li>Email: nataliia1sorokina@gmail.com</li>
     <li>Address: Winchester, United Kingdom</li>
   </ul>
-  <img #spaceship class="spaceship" src="../../../assets/spaceships/pngwing.com(3).png" alt="">
 </div>

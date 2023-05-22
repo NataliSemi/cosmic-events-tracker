@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -32,11 +33,26 @@
   .image-container {
     text-align: center;
   }
+
+  h2{
+    font-weight: bold;
+  }
   
   .image-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
+    font-family: 'Candal', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .copyrght{
+    background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
+    font-family: 'Candal', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .image {
@@ -61,6 +77,10 @@
   .contact-form{
     background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay color */
     overflow: auto; /* Add scrollable behavior */
+    opacity: 5;
+    z-index: 1; /* Add a higher z-index value */
+    position: relative;
+    height: 90%;
 
   }
 

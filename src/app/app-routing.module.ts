@@ -6,7 +6,6 @@ import { ContactComponent } from './components/contacts/contact.component';
 import { ImageSearchComponent } from './components/image-search/image-search.component';
 
 const routes: Routes = [
-  { path: 'events', component: EventListComponent },
   { path: 'events/:id', component: EventDetailsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'image-search', component: ImageSearchComponent },
