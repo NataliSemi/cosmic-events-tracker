@@ -4,6 +4,9 @@
 }
 
 .image-search-container {
+  opacity: 5;
+  position: relative; /* Add position relative */
+  z-index: 1;
   background-image: url('../../../assets/galaxy2.jpg');
   background-size: cover;
   background-position: center;
@@ -12,6 +15,7 @@
   overflow: auto;
   text-align: center;
   width: 30%; /* Set desired width */
+  
 }
 
 p{
@@ -49,31 +53,52 @@ label.image-search-input{
   margin: 5px 10px;
 }
 
-.image-search-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #ffffff;
+.dark-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.image-search-input {
-  display: block;
-  margin: 0 auto;
-  width: 300px;
+.dark-label {
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.dark-input {
+  flex: 1;
   height: 40px;
   padding: 5px 10px;
   font-size: 16px;
+  background-color: #555555;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  opacity: 5;
+  position: relative; /* Add position relative */
+  z-index: 1; 
 }
 
-.image-search-button {
-  width: 100px;
+.dark-button {
   height: 40px;
-  background-color: #ffffff;
-  color: #000000;
+  padding: 0 15px;
+  background-color: #666666;
+  color: #ffffff;
   font-size: 16px;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
+  opacity: 5;
+  z-index: 1; /* Add a higher z-index value */
 }
+
+.dark-button:hover {
+  background-color: #888888;
+}
+
+
 
 .image-results {
   margin-top: 20px;

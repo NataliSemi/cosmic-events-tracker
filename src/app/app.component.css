@@ -16,7 +16,11 @@
   padding: 25px; /* Increase the padding to make the navbar taller */
   color: #cccccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 5;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Add a higher z-index value */
 }
+
 
 .navbar-link {
   margin: 0 10px;
@@ -92,4 +96,12 @@ li:hover {
 
 .nav-link:hover {
   color: #555;
+}
+
+.hero{
+  /* transform: rotate(-100deg); */
+  opacity: 0.3;
+  min-height: 90vh;
+  min-width: 100%;
+  position: absolute;
 }

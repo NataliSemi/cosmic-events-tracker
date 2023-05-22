@@ -1,12 +1,12 @@
 <div class="container">
 
   <form (ngSubmit)="searchImages()" class="text-center compact-form">
-    <mat-form-field class="image-search-input-container">
-      <mat-label>Image Search</mat-label>
-      <input matInput type="text" [(ngModel)]="query" name="query">
-      <button mat-button class="items-center" type="submit">Search</button>
-    </mat-form-field>
-  </form>
+    <div class="dark-input-container">
+      <label class="dark-label">Image Search</label>
+      <input class="dark-input" type="text" [(ngModel)]="query" name="query">
+      <button class="dark-button" type="submit">Search</button>
+    </div>
+  </form>  
 
 
   <div class="centered-container">
