@@ -91,7 +91,7 @@ h3 {
 a{
   color:#ca1aff;
   text-decoration: none;
-  background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
+  background: linear-gradient(#ebe6d5, #fce355, #e6c408);
   font-family: 'Candal', sans-serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,6 +99,9 @@ a{
 
 a:hover{
   color: #555;
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgba(255, 244, 87, 0.3);
+  color: #000;
 }
 
 li{
