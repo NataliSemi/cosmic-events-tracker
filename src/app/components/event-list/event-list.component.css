@@ -293,17 +293,6 @@ li:hover {
   animation: spaceshipMovement linear infinite;
   height: 60px;
   width: 60px;
-  top: 20%;
-  left: 80%;
-  /* transform: translate(-50%, -50%); */
-  animation-duration: 8s;
-}
-
-.spaceship {
-  position: absolute;
-  animation: spaceshipMovement linear infinite;
-  height: 60px;
-  width: 60px;
   transform: translate(-50%, -50%);
   animation-duration: 18s;
   top: calc(5% + (90% * random()));

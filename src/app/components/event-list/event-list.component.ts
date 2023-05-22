@@ -20,6 +20,36 @@ export class EventListComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngAfterViewInit(): void {
+    this.getNasaEvents(); // Call the method to fetch NASA events
+  }
+  
+  ngOnInit(): void {
+    // Initialize component
+  }
+
+  @HostListener('window:wheel', ['$event'])
+  onWindowScroll(event: Event): void {
+    // Handle the scroll event here
+    // You can access the scroll position using `window.scrollY`
+    // Example:
+    if (window.scrollY > 500) {
+      // Perform some action when the user scrolls beyond a certain point
+    }
+  }
+  
+  getNasaEvents(): void {
+    this.nasaService.getNasaEvents().subscribe(
+      (response) => {
+        this.events = response.events;
+        this.positionSpaceship(); // Call the method to position the spaceship
+      },
+      (error) => {
+        console.log('Error:', error);
+      }
+    );
+  }
+
+  positionSpaceship(): void {
     setTimeout(() => {
       const spaceship = this.spaceshipRef?.nativeElement as HTMLElement;
       if (spaceship) {
@@ -37,31 +67,6 @@ export class EventListComponent implements OnInit, AfterViewInit {
         setInterval(getRandomPosition, 3000); // Change the interval value as desired
       }
     }, 100);
-  }
-  
-  ngOnInit(): void {
-    this.getNasaEvents();
-  }
-
-  @HostListener('window:wheel', ['$event'])
-  onWindowScroll(event: Event): void {
-    // Handle the scroll event here
-    // You can access the scroll position using `window.scrollY`
-    // Example:
-    if (window.scrollY > 500) {
-      // Perform some action when the user scrolls beyond a certain point
-    }
-  }
-  
-  getNasaEvents(): void {
-    this.nasaService.getNasaEvents().subscribe(
-      (response) => {
-        this.events = response.events;
-      },
-      (error) => {
-        console.log('Error:', error);
-      }
-    );
   }
 
   goToEventDetails(eventId: string): void {
