@@ -1,15 +1,3 @@
-/* Container styles */
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  /* background-image: url('../../../assets/6502013.jpg'); */
-  background-image: url("../../../assets/galaxy2.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-}
-
 /* Title styles */
 h1,
 h2 {
@@ -170,10 +158,6 @@ li:hover {
   }
 }
 
-.cosmic-container {
-  position: relative;
-}
-
 .cosmic-title {
   text-align: center;
 }
@@ -246,9 +230,6 @@ li:hover {
   }
 }
 
-/* Rest of the CSS code... */
-
-/* Rest of the CSS code... */
 .satellite {
   position: absolute;
   animation: satelliteMovement linear infinite;
@@ -300,7 +281,6 @@ li:hover {
   animation-fill-mode: both;
 }
 
-
 @keyframes spaceshipMovement {
   0% {
     top: calc(5% + (90% * random()));
@@ -328,5 +308,3 @@ li:hover {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-
-
