@@ -61,9 +61,7 @@
   .contact-form{
     background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay color */
     overflow: auto; /* Add scrollable behavior */
-        opacity: 5;
-    position: relative; /* Add position relative */
-    z-index: 1; /* Add 
+
   }
 
   .contact-form::-webkit-scrollbar {
@@ -84,7 +82,7 @@
   
   .hero{
     /* transform: rotate(-100deg); */
-    opacity: 0.3;
+    opacity: 0.2;
     min-height: 90vh;
     min-width: 100%;
     position: absolute;

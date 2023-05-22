@@ -68,7 +68,13 @@ li:hover {
   background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay color */
   padding: 10px; /* Add padding for the overlay */
 }
-
+.hero{
+  /* transform: rotate(-100deg); */
+  opacity: 0.2;
+  min-height: 90vh;
+  min-width: 100%;
+  position: absolute;
+}
 .cosmic-list::-webkit-scrollbar {
   width: 8px; /* Set the width of the scrollbar */
 }

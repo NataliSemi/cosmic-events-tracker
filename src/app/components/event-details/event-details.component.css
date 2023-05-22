@@ -36,6 +36,14 @@ h3 {
   font-weight: bold;
 }
 
+.hero{
+  /* transform: rotate(-100deg); */
+  opacity: 0.3;
+  min-height: 90vh;
+  min-width: 100%;
+  position: absolute;
+}
+
 .event-details {
   background-color: rgba(0, 0, 0, 0.6);
   color: #ffffff;

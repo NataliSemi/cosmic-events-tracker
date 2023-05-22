@@ -4,9 +4,6 @@
 }
 
 .image-search-container {
-  opacity: 5;
-  position: relative; /* Add position relative */
-  z-index: 1;
   background-image: url('../../../assets/galaxy2.jpg');
   background-size: cover;
   background-position: center;
@@ -163,6 +160,16 @@ li {
 .images-result-wrapper {
   max-height: 900px; /* Set a maximum height for the container */
   overflow-y: auto; /* Enable vertical overflow */
+  opacity: 5;
+  position: relative; /* Add position relative */
+  z-index: 1;
+}
+.hero{
+  /* transform: rotate(-100deg); */
+  opacity: 0.1;
+  min-height: 90vh;
+  min-width: 100%;
+  position: absolute;
 }
 
 .images-result-wrapper::-webkit-scrollbar {
