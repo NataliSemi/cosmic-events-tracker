@@ -5,7 +5,7 @@
 .container {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 /* Container styles */
@@ -24,7 +24,7 @@ h2 {
 }
 
 .title-description {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .categories-sources {
@@ -51,7 +51,7 @@ h3 {
   color: #ffffff;
   overflow: auto;
   width: 40%;
-  max-height: 90vh; /* Adjust the maximum height as desired */
+  max-height: 85%; 
   padding: 10px;
   opacity: 5;
   z-index: 1; /* Add a higher z-index value */
@@ -76,17 +76,17 @@ h3 {
 
 .categories {
   text-align: left;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .sources {
   text-align: right;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .geometrics {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 a{

@@ -14,8 +14,6 @@
   overflow: auto;
   text-align: center;
   width: 30%; /* Set desired width */
-  height: 60%;
-  margin-bottom: 30px;
   
 }
 
@@ -170,7 +168,7 @@ li {
   color: #ffffff;
 }
 .images-result-wrapper {
-  max-height: 900px; /* Set a maximum height for the container */
+  max-height: 800px; /* Set a maximum height for the container */
   overflow-y: auto; /* Enable vertical overflow */
   opacity: 5;
   position: relative; /* Add position relative */
@@ -207,8 +205,6 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 20px;
-  padding-bottom: 40px;
 }
 
 .images-result-list li {
@@ -340,4 +336,22 @@ li {
   overflow: auto;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 768px) {
+  .images-result-container {
+    width: 60%; /* Adjust the width as desired */
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    padding: 10px;
+    color: #ffffff;
+  }
+  .images-result-wrapper {
+    max-height: 600px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical overflow */
+    opacity: 5;
+    position: relative; /* Add position relative */
+    z-index: 1;
+  } 
 }
