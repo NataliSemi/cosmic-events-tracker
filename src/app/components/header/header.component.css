@@ -9,6 +9,12 @@
   background-repeat: no-repeat;
 }
 
+.logo img{
+  width: 30px;
+  height: 30px;
+  align-items: start;
+}
+
 .navbar-toggle{
   display: none;
 }

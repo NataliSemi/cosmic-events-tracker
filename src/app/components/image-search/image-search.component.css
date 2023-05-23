@@ -334,10 +334,11 @@ li {
     position: relative; /* Add position relative */
     z-index: 1;
   } 
-
-
   .hero{
-    margin-bottom: 0px;
     max-width: 500px;
+  }
+  .images-result-list img{
+    width: 300px;
+    height: 200px;
   }
 }
