@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
 }
 
+.navbar-toggle{
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -97,4 +101,72 @@ li:hover {
 
 .nav-link:hover {
   color: #555;
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+
+  /* Navbar container */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  /* Navbar menu */
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .navbar-mobile-show {
+    max-height: 300px; /* Adjust the maximum height as needed */
+    display: contents;
+  }
+
+
+  /* Navbar links */
+  .navbar-link {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-link:hover {
+    color: #6f00ff;
+  }
+
+  /* Navbar toggle button */
+  .navbar-toggle {
+    display: contents;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .navbar-toggle-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-top: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-toggle:hover .navbar-toggle-icon {
+    background-color: #6f00ff;
+  }
+  
 }

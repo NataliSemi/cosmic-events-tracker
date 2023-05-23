@@ -1,5 +1,5 @@
 <nav class="navbar">
-  <div class="navbar-menu">
+  <div class="navbar-menu" [ngClass]="{'navbar-mobile-show': isMobileNavbarVisible}">
     <a routerLink="/" class="navbar-link">
       <img src="../assets/spaceships/pngwing.com.png" alt="" class="nav-icon">
       Events
@@ -13,14 +13,7 @@
       Image Search
     </a>
   </div>
-  <!-- <button class="navbar-toggle" onclick="toggleMobileNavbar()">
+  <button class="navbar-toggle" (click)="toggleMobileNavbar()">
     <span class="navbar-toggle-icon"></span>
-  </button> -->
+  </button>
 </nav>
-<script>
-  function toggleMobileNavbar() {
-  const navbarMenu = document.querySelector('.navbar-menu');
-  navbarMenu.classList.toggle('navbar-mobile-show');
-}
-
-</script>
