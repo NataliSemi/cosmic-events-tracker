@@ -146,5 +146,13 @@
       left: calc(5% + (90% * random()));
       transform: translate(-50%, -50%) rotate(360deg);
     }
+    
   }
+
+  @media (max-width: 768px) {
+    .hero{
+      margin-bottom: 0px;
+      max-width: 500px;
+    }
   
+  }

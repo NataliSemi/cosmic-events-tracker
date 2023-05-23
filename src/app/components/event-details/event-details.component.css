@@ -127,6 +127,11 @@ tr{
   .event-details {
     width: 80%;
   }
+
+  .hero{
+    margin-bottom: 0px;
+    max-width: 500px;
+  }
 }
 
 /* Rest of the CSS styles remain the same */

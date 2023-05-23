@@ -299,6 +299,10 @@ li:hover {
   opacity: 0.3;
 }
 
+.hero{
+  margin-bottom: 0px;
+  max-width: 500px;
+}
 }
 
 /* End of optimized code */
