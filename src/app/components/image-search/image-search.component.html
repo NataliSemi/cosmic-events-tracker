@@ -14,11 +14,13 @@
       <h3>Search Results:</h3>
       <div class="images-result-wrapper">
         <ul class="images-result-list">
-          <li *ngFor="let item of images">
-            <img [src]="item.links[0].href" alt="{{ item.data[0].title }}" />
-            <h4>{{ item.data[0].title }}</h4>
-            <p>{{ item.data[0].description }}</p>
-          </li>
+          <ng-container *ngFor="let item of images">
+            <li *ngIf="item.links && item.links.length > 0">
+              <img [src]="item.links[0].href" alt="{{ item.data[0].title }}" />
+              <h4>{{ item.data[0].title }}</h4>
+              <p>{{ item.data[0].description }}</p>
+            </li>
+          </ng-container>
         </ul>
       </div>
     </div>
