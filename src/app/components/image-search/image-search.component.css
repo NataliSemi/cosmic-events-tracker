@@ -78,17 +78,8 @@ label.image-search-input{
   background-color: #888888;
 }
 
-
-
 .image-results {
   margin-top: 20px;
-}
-
-h3{
-  background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
-  font-family: 'Candal', sans-serif;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .image-card {
@@ -179,6 +170,10 @@ li {
 }
 .images-result-wrapper {
   overflow: auto;
+}
+
+p{
+  color: #fff;
 }
 
 .images-result-list {

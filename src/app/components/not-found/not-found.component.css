@@ -1,0 +1,121 @@
+@import url(https://allfont.net/allfont.css?fonts=star-jedi);
+  .hero {
+    opacity: 0.3;
+    min-height: 90vh;
+    min-width: 100%;
+    position: absolute;
+  }
+
+  .dart-vander-style{
+    position: absolute;
+    right: 0px; /* Adjust the value to move closer or farther from the right side */
+    margin-right: 25%; /* Adjust the value to add or reduce the right margin */
+    width: 400px;
+  }
+  .dart-speech{
+    color: #dbdad0;
+    font-family: 'Candal', sans-serif;
+    font-size: 23px;
+  }
+  
+  h3{
+    font-size: 30px;
+    background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
+    font-family: 'Candal', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dart {
+    width: 500px;
+    height: 600px;
+    opacity: 0.8;
+    margin-top: 15px;
+  }
+
+.planet {
+    position: absolute;
+    animation: planetMovement linear infinite;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .planet.planet1 {
+    top: 20%;
+    right: 10%;
+    animation-duration: 8s;
+  }
+  
+  .planet.planet2 {
+    top: 30%;
+    right: 20%;
+    animation-duration: 12s;
+  }
+  
+  .planet.planet3 {
+    top: 40%;
+    right: 30%;
+    animation-duration: 10s;
+  }
+  
+  .planet.planet4 {
+    top: 50%;
+    right: 40%;
+    animation-duration: 15s;
+  }
+  
+  .planet.planet5 {
+    top: 60%;
+    right: 50%;
+    animation-duration: 14s;
+  }
+  
+  .planet.planet6 {
+    top: 70%;
+    right: 60%;
+    animation-duration: 11s;
+  }
+  
+  .planet.planet7 {
+    top: 80%;
+    right: 70%;
+    animation-duration: 13s;
+  }
+  
+  @keyframes planetMovement {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .satellite {
+    position: absolute;
+    animation: satelliteMovement linear infinite;
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 18s;
+  }
+
+  .hero{
+    margin-bottom: 0px;
+    max-width: 500px;
+  }
+
+  @media (max-width: 768px) {
+
+    .dart-vander-style{
+        position: absolute;
+        right: 0px; /* Adjust the value to move closer or farther from the right side */
+        margin-right: 15%; /* Adjust the value to add or reduce the right margin */
+        width: 400px;
+      }
+  }
