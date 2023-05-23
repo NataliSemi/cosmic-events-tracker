@@ -1,2 +1,337 @@
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
-.container{color:#fff}.image-search-container{background-image:url('../../../assets/galaxy2.jpg');background-size:cover;background-position:center;padding:20px;color:#fff;overflow:auto;text-align:center;width:30%}.text-center{text-align:center}.items-center{align-items:center}.compact-form{margin:0;padding:0}.compact-form .mat-form-field{margin-bottom:0}.image-search-input{width:100%;height:40px;padding:5px 10px;box-sizing:border-box}.label.image-search-input{font-size:26px;margin:5px 10px}.dark-input-container{display:flex;align-items:center;background-color:#333;padding:10px;border-radius:5px}.dark-label{color:#fff;font-weight:bold;margin-right:10px}.dark-input{flex:1;height:40px;padding:5px 10px;font-size:16px;background-color:#555;color:#fff;border:none;border-radius:3px;opacity:5;position:relative;z-index:1}.dark-button{height:40px;padding:0 15px;background-color:#666;color:#fff;font-size:16px;border:none;border-radius:3px;cursor:pointer;opacity:5;z-index:1;margin:5px}.dark-button:hover{background-color:#888}.image-results{margin-top:20px}.h3{background:linear-gradient(#ebe6d5,#fff,#e6c408);font-family:Candal,sans-serif;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.image-card{display:inline-block;width:30%;margin-right:10px;margin-bottom:10px;border:1px solid #fff;padding:10px}.image-card-title{color:#fff;font-size:18px;font-weight:bold;margin-bottom:10px}.image-card-description{color:#fff;font-size:14px;line-height:1.4}.image-card-link{color:#fff;display:block;margin-top:10px;color:#fff;text-decoration:none}.li{color:#fff}.cosmic-container{position:relative}.cosmic-title{text-align:center}.centered-container{display:flex;justify-content:center;align-items:center;height:100%}.images-result-container{width:50%;background-color:rgba(0,0,0,0.6);overflow:auto;padding:10px;color:#fff}.images-result-wrapper{max-height:800px;overflow-y:auto;opacity:5;position:relative;z-index:1}.hero{opacity:.3;min-height:90vh;min-width:100%;position:absolute}.images-result-wrapper::-webkit-scrollbar{width:8px}.images-result-wrapper::-webkit-scrollbar-track{background-color:rgba(0,0,0,.5)}.images-result-wrapper::-webkit-scrollbar-thumb{background-color:rgba(255,255,255,.5)}.images-result-wrapper::-webkit-scrollbar-thumb:hover{background-color:rgba(255,255,255,.8)}.images-result-wrapper{overflow:auto}.images-result-list{margin:0;padding:0;list-style-type:none}.images-result-list li{margin-bottom:20px;padding:10px;border-radius:5px;color:#fff}.images-result-container::-webkit-scrollbar{width:8px;height:8px}.images-result-container::-webkit-scrollbar-thumb{background:rgba(255,255,255,.5);border-radius:4px}.images-result-container::-webkit-scrollbar-track{background:rgba(0,0,0,.5)}.images-result-container::-webkit-scrollbar-corner{background:rgba(0,0,0,.5)}.images-result-container::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.8)}.images-result-container::-webkit-scrollbar-thumb:vertical{height:40px}.images-result-container::-webkit-scrollbar-thumb:horizontal{width:40px}.planet-container{position:absolute;top:50%;right:0;transform:translateY(-50%)}.planet{position:absolute;animation:planetMovement linear infinite;height:50px;width:50px}.planet.planet1{top:20%;right:10%;animation-duration:8s}.planet.planet2{top:30%;right:20%;animation-duration:12s}.planet.planet3{top:40%;right:30%;animation-duration:10s;opacity:.3}.planet.planet4{top:50%;right:40%;animation-duration:15s;opacity:.3}.planet.planet5{top:60%;right:50%;animation-duration:14s;opacity:.3}.planet.planet6{top:70%;right:60%;animation-duration:11s;opacity:.3}.planet.planet7{top:80%;right:70%;animation-duration:13s}@keyframes planetMovement{0%{transform:translateX(0)}50%{transform:translateX(-50%)}100%{transform:translateX(0)}}@keyframes slideInRight{0%{transform:translateX(100px);opacity:0}100%{transform:translateX(0);opacity:1}}.image-input{overflow:auto;padding:10px;background-color:rgba(0,0,0,.6)}@media (max-width:768px){.images-result-container{width:60%;background-color:rgba(0,0,0,.6);overflow:auto;padding:10px;color:#fff}.images-result-wrapper{max-height:600px;overflow-y:auto;opacity:5;position:relative;z-index:1}}
+
+
+.text-center {
+  text-align: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+
+.compact-form {
+  margin: 0;
+  padding: 0;
+}
+
+.compact-form .mat-form-field {
+  margin-bottom: 0;
+}
+
+
+.image-search-input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  box-sizing: border-box; /* Add this to include padding in the width */
+}
+
+label.image-search-input{
+  font-size: 26px;
+  margin: 5px 10px;
+}
+
+.dark-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dark-label {
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.dark-input {
+  flex: 1;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #555555;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  opacity: 5;
+  position: relative; /* Add position relative */
+  z-index: 1; 
+}
+
+.dark-button {
+  height: 40px;
+  padding: 0 15px;
+  background-color: #666666;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 5;
+  z-index: 1; /* Add a higher z-index value */
+  margin: 5px;
+}
+
+.dark-button:hover {
+  background-color: #888888;
+}
+
+
+
+.image-results {
+  margin-top: 20px;
+}
+
+h3{
+  background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
+  font-family: 'Candal', sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-card {
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.image-card-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.image-card-description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.image-card-link {
+  color: #ffffff;
+  display: block;
+  margin-top: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li {
+  color: #ffffff;
+}
+
+.cosmic-container {
+  position: relative;
+}
+
+.cosmic-title {
+  text-align: center;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.images-result-container {
+  width: 50%; /* Adjust the width as desired */
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  padding: 10px;
+  color: #ffffff;
+}
+.images-result-wrapper {
+  max-height: 800px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical overflow */
+  opacity: 5;
+  position: relative; /* Add position relative */
+  z-index: 1;
+}
+.hero{
+  /* transform: rotate(-100deg); */
+  opacity: 0.3;
+  min-height: 90vh;
+  min-width: 100%;
+  position: absolute;
+}
+
+.images-result-wrapper::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.images-result-wrapper::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the scrollbar track */
+}
+
+.images-result-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Set the color of the scrollbar thumb */
+}
+
+.images-result-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Set the color of the scrollbar thumb on hover */
+}
+.images-result-wrapper {
+  overflow: auto;
+}
+
+.images-result-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.images-result-list li {
+  /* ... your other styles ... */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+/* Scrollbar styles */
+.images-result-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.images-result-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.images-result-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.images-result-container::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.images-result-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.images-result-container::-webkit-scrollbar-thumb:vertical {
+  height: 40px;
+}
+
+.images-result-container::-webkit-scrollbar-thumb:horizontal {
+  width: 40px;
+}
+
+
+.planet-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.planet {
+  position: absolute;
+  animation: planetMovement linear infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.planet.planet1 {
+  top: 20%;
+  right: 10%;
+  animation-duration: 8s;
+}
+
+.planet.planet2 {
+  top: 30%;
+  right: 20%;
+  animation-duration: 12s;
+}
+
+.planet.planet3 {
+  top: 40%;
+  right: 30%;
+  animation-duration: 10s;
+  opacity: 0.3;
+}
+
+.planet.planet4 {
+  top: 50%;
+  right: 40%;
+  animation-duration: 15s;
+  opacity: 0.3;
+}
+
+.planet.planet5 {
+  top: 60%;
+  right: 50%;
+  animation-duration: 14s;
+  opacity: 0.3;
+}
+
+.planet.planet6 {
+  top: 70%;
+  right: 60%;
+  animation-duration: 11s;
+  opacity: 0.3;
+}
+
+.planet.planet7 {
+  top: 80%;
+  right: 70%;
+  animation-duration: 13s;
+}
+
+@keyframes planetMovement {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.image-input {
+  overflow: auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 768px) {
+  .images-result-container {
+    width: 60%; /* Adjust the width as desired */
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    padding: 10px;
+    color: #ffffff;
+  }
+  .images-result-wrapper {
+    max-height: 600px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical overflow */
+    opacity: 5;
+    position: relative; /* Add position relative */
+    z-index: 1;
+  } 
+}
