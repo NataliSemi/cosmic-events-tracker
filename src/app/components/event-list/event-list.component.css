@@ -25,7 +25,6 @@ h3 {
   color: #fff;
 }
 
-
 a {
   color: #007bff;
   text-decoration: none;
@@ -296,54 +295,10 @@ li:hover {
   background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay color */
   padding: 10px; /* Add padding for the overlay */
 }
-.planet.planet1 {
-  top: 20%;
-  right: 10%;
-  animation-duration: 8s;
+.planet.planet1, .planet.planet2, .planet.planet3, .planet.planet4, .planet.planet5, .planet.planet6, .planet.planet7{
   opacity: 0.3;
 }
 
-.planet.planet2 {
-  top: 30%;
-  right: 20%;
-  animation-duration: 12s;
-  opacity: 0.3;
-}
-
-.planet.planet3 {
-  top: 40%;
-  right: 30%;
-  animation-duration: 10s;
-  opacity: 0.3;
-}
-
-.planet.planet4 {
-  top: 50%;
-  right: 40%;
-  animation-duration: 15s;
-  opacity: 0.3;
-}
-
-.planet.planet5 {
-  top: 60%;
-  right: 50%;
-  animation-duration: 14s;
-  opacity: 0.3;
-}
-
-.planet.planet6 {
-  top: 70%;
-  right: 60%;
-  animation-duration: 11s;
-  opacity: 0.3;
-}
-
-.planet.planet7 {
-  top: 80%;
-  right: 70%;
-  animation-duration: 13s;
-  opacity: 0.3;
-}
 }
 
 /* End of optimized code */
