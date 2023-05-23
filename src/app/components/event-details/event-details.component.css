@@ -24,7 +24,7 @@ h2 {
 }
 
 .title-description {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .categories-sources {
@@ -46,12 +46,13 @@ h3 {
 }
 
 .event-details {
+  margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   overflow: auto;
   width: 40%;
   max-height: 90vh; /* Adjust the maximum height as desired */
-  padding: 20px;
+  padding: 10px;
   opacity: 5;
   z-index: 1; /* Add a higher z-index value */
   position: relative;
@@ -75,17 +76,17 @@ h3 {
 
 .categories {
   text-align: left;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .sources {
   text-align: right;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .geometrics {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 a{
@@ -119,7 +120,13 @@ th{
 
 tr{
   font-size: 18px;
-  padding: 20px;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .event-details {
+    width: 60%;
+  }
 }
 
 /* Rest of the CSS styles remain the same */

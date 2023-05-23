@@ -14,6 +14,8 @@
   overflow: auto;
   text-align: center;
   width: 30%; /* Set desired width */
+  height: 60%;
+  margin-bottom: 30px;
   
 }
 
@@ -205,6 +207,8 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .images-result-list li {
