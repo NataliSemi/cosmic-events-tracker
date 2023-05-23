@@ -1,13 +1,12 @@
-/* Title styles */
 @import url(https://allfont.net/allfont.css?fonts=star-jedi);
-h1,
-h2 {
+h1, h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #fff;
 }
-h1{
+
+h1 {
   text-align: center;
   background: linear-gradient(#ebe6d5, #ffffff, #e6c408);
   font-family: 'Candal', sans-serif;
@@ -15,7 +14,6 @@ h1{
   -webkit-text-fill-color: transparent;
 }
 
-/* Event styles */
 ul {
   list-style-type: none;
   padding: 0;
@@ -31,12 +29,12 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #ffffff;
+  color: #fff;
 }
 
 p {
   margin-bottom: 10px;
-  color: #cccccc;
+  color: #ccc;
 }
 
 a {
@@ -48,7 +46,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Hover effect for event items */
 li:hover {
   background-color: rgba(51, 51, 51, 0.8);
 }
@@ -67,33 +64,34 @@ li:hover {
 
 .cosmic-list {
   animation: slideInRight 1s ease-in-out;
-  width: 30%; /* Set desired width */
-  height: 100%; /* Ensure full height */
-  overflow: auto; /* Add scrollable behavior */
-  background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay color */
-  padding: 10px; /* Add padding for the overlay */
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
 }
-.hero{
-  /* transform: rotate(-100deg); */
+
+.hero {
   opacity: 0.3;
   min-height: 90vh;
   min-width: 100%;
   position: absolute;
 }
+
 .cosmic-list::-webkit-scrollbar {
-  width: 8px; /* Set the width of the scrollbar */
+  width: 8px;
 }
 
 .cosmic-list::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the scrollbar track */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .cosmic-list::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.5); /* Set the color of the scrollbar thumb */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .cosmic-list::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.8); /* Set the color of the scrollbar thumb on hover */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .cosmic-item {
@@ -300,7 +298,6 @@ li:hover {
   }
 }
 
-
 @media (max-width: 768px) {
 .cosmic-list {
   animation: slideInRight 1s ease-in-out;
@@ -358,5 +355,6 @@ li:hover {
   animation-duration: 13s;
   opacity: 0.3;
 }
-
 }
+
+/* End of optimized code */
